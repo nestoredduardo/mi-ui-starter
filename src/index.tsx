@@ -1,15 +1,13 @@
-import React, { FC, HTMLAttributes, ReactChild } from 'react';
+import React from 'react'
 
-export interface Props extends HTMLAttributes<HTMLDivElement> {
-  /** custom content, defaults to 'the snozzberries taste like snozzberries' */
-  children?: ReactChild;
+interface IThingProps {
+  children: React.ReactNode
 }
 
-// Please do not use types off of a default export module or else Storybook Docs will suffer.
-// see: https://github.com/storybookjs/storybook/issues/9556
-/**
- * A custom Thing component. Neat!
- */
-export const Thing: FC<Props> = ({ children }) => {
-  return <div>{children || `the snozzberries taste like snozzberries`}</div>;
-};
+export const Thing: React.FC<IThingProps> = ({ children }) => {
+  return (
+    <div className="bg-blue-200 text-blue-400 p-4 rounded-lg">
+      {children || `the snozzberries taste like snozzberries`}
+    </div>
+  )
+}
