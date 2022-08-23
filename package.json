@@ -35,18 +35,18 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "ui-library-template-v1",
+  "name": "ui-library-starter",
   "author": {
     "name": "Nestor Mamani"
   },
-  "module": "dist/ui-library-template-v1.esm.js",
+  "module": "dist/ui-library-starter.esm.js",
   "size-limit": [
     {
-      "path": "dist/ui-library-template-v1.cjs.production.min.js",
+      "path": "dist/ui-library-starter.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/ui-library-template-v1.esm.js",
+      "path": "dist/ui-library-starter.esm.js",
       "limit": "10 KB"
     }
   ],
@@ -80,5 +80,5 @@
     "classnames": "^2.3.1"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "ui-library-template-v1@0.1.0"
+  "_id": "ui-library-starter@0.1.0"
 }
